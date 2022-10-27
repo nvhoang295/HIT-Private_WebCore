@@ -1,0 +1,55 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
+img {
+  float: left;
+}
+
+p {
+  color: white;
+  top: 400;
+}
+
+.desc {
+  color: yellow;
+  clear: both;
+  background-color: red;
+}
+
+.require {
+  color: yellow;
+  background-color: blue;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-image: url("/assets/img/pngtree-blue-creative-gradient-decoration-image_11175.jpg");
+}
+
+tr,
+td,
+th {
+  border: 1px solid yellow;
+  padding: 20px;
+}
+
+td:nth-child(1) {
+  text-align: center;
+}
+
+.contact {
+  color: lightgreen;
+  background-color: #ff00dd;
+}
