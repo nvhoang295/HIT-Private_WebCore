@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container__col2 {
+  display: flex;
+  align-items: center;
+}
+
+.container__col9 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.green {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
+
+.spacer {
+  width: 25px;
+  height: 25px;
+}
