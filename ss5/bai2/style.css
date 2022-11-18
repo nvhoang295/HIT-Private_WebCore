@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to left, #0062ff, #ff00aa);
+}
+
+.login {
+  margin-top: 20px;
+  width: 30%;
+  height: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: black;
+}
+
+.login__heading {
+  margin-top: 60px;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.username {
+  width: 100%;
+  height: 100px;
+  /* background-color: #777; */
+  padding: 0 40px;
+  font-size: 24px;
+}
+
+.username input[type=text] {
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.password {
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  /* background-color: #555; */
+  padding: 0 40px;
+  font-size: 24px;
+}
+
+.password input[type=password] {
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.forgot {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  /* background-color: #333; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 40px;
+  font-size: 18px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  align-self: center;
+  margin-top: 30px;
+  height: 60px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 70%;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  justify-content: center;
+  background: linear-gradient(to left, #0062ff, #ff00aa);
+}
+
+
+
+.social-media {
+  margin-top: 50px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: green; */
+}
+
+.social-media p {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.social-media i {
+  color: white;
+  background-color: rgb(0, 110, 255);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.social-media i:nth-child(2) {
+  background-color: #2ac5c5;
+}
+
+.social-media i:nth-child(3) {
+  background-color: red;
+}
+
+.sign-up {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.sign-up p {
+  margin-bottom: 20px;
+}
