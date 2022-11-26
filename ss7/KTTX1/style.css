@@ -201,7 +201,7 @@
   /* background-color: yellow; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -211,10 +211,16 @@
   justify-content: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .right-product__name {
   width: 80%;
+}
+
+.right-product__img {
+  display: flex;
+  justify-content: center;
 }
 
 .right-product__img img {
