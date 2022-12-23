@@ -118,6 +118,15 @@
   height: 100%;
 }
 
+@media (width < 576px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar {
+    padding: 0 20px;
+  }
+}
+
 .navbar__menu ul {
   display: flex;
   height: 100%;
@@ -127,6 +136,7 @@
 
 .navbar__menu ul li {
   list-style-type: none;
+  margin-left: 30px;
 }
 
 .navbar__menu ul li a {
@@ -237,6 +247,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .list-item {
@@ -245,6 +256,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (768px <= width < 992px) {
+  .list-item {
+    width: 40%;
+  }
+}
+
+@media (width < 768px) {
+  .list-item {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  #services {
+    height: auto;
+    padding: 50px 0;
+  }
 }
 
 .list-item i {
@@ -272,15 +300,49 @@
   flex-wrap: wrap;
 }
 
+@media (768px <= width < 992px) {
+  #portfolio {
+    height: auto;
+  }
+}
+
 .portfolio-item {
   width: calc(100% / 3);
   height: 50%;
   position: relative;
 }
 
+@media (768px <= width < 992px) {
+  .portfolio-item {
+    width: 50%;
+    height: calc(100% / 3);
+    object-fit: cover;
+  }
+}
+
+@media (576px <= width < 768px) {
+  .portfolio-item {
+    width: 50%;
+    object-fit: cover;
+    height: calc(100% / 3);
+  }
+}
+
+@media (width < 576px) {
+  .portfolio-item {
+    width: 100%;
+    height: calc(100% / 6);
+    object-fit: cover;
+  }
+  #portfolio {
+    height: auto;
+  }
+}
+
 .portfolio-item img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-item:hover .item-cover {
@@ -329,6 +391,74 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (width < 576px) {
+  #contact {
+    padding-top: 30px;
+  }
+  #contact form input,
+  textarea {
+    width: 80% !important;
+  }
+  .contact__heading {
+    margin: 70px 0 10px 0 !important;
+  }
+
+  .contact__desc {
+    margin-bottom: 30px;
+  }
+  #contact {
+    height: auto;
+  }
+  .submit-btn {
+    width: 80%;
+  }
+}
+
+@media (576px <= width < 768px) {
+  .contact__heading {
+    margin: 70px 0 10px 0 !important;
+  }
+  #contact form input,
+  textarea {
+    width: 80% !important;
+  }
+  .contact__desc {
+    margin-bottom: 50px;
+  }
+  #contact {
+    height: auto;
+  }
+  .submit-btn {
+    width: 80%;
+  }
+}
+
+@media (768px <= width < 992px) {
+  #contact form input,
+  textarea {
+    width: 80% !important;
+  }
+  #contact {
+    height: auto;
+  }
+  .submit-btn {
+    width: 80%;
+  }
+}
+
+@media (992px <= width < 1200px) {
+  #contact form input,
+  textarea {
+    width: 80% !important;
+  }
+  #contact {
+    height: auto;
+  }
+  .submit-btn {
+    width: 80%;
+  }
 }
 
 #contact form {
